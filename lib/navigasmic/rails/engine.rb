@@ -7,7 +7,7 @@ module Navigasmic
     end
 
     config.to_prepare do
-      if File.exists?(Rails.root.join('config', 'initializers', 'navigasmic'))
+      if File.exist?(Rails.root.join('config', 'initializers', 'navigasmic'))
         require Rails.root.join('config', 'initializers', 'navigasmic')
       end
     end
